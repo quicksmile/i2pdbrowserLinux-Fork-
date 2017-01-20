@@ -262,7 +262,6 @@ echo 'TZ=GMT${what}${number} ./firefox --profile ../data' >> "${application}-por
 chmod u+x "$application-portable"
 echo ... finished
 rm -rf ../all
-rm -rf ../extensions
 cat << EOF > ../startwithi2pd.sh
 ./i2pd/i2pd
 ./$dir/$application-portable
