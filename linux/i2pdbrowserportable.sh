@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 arch=$(uname -m)
 language=$(echo $LANG | cut -c-5 | sed s/_/-/g)
 version="45.6.0esr"
