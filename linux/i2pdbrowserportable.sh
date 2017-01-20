@@ -27,7 +27,7 @@ if [ ! -f $file ]; then
 	echo "Can't find downloaded file. Does FireFox support your system language?"
 	exit 1;
 fi
-echo -e "\e[33Extracting archive, please wait...[0m"
+echo -e "\e[33mExtracting archive, please wait...[0m"
 tar xfj $file
 rm $file
 mv $application app
