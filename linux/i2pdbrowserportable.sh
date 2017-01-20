@@ -3,9 +3,13 @@ arch=$(uname -m)
 language=$(echo $LANG | cut -c-5 | sed s/_/-/g)
 version="45.6.0esr"
 application="firefox"
-
-echo "This script prepearing $application $version for use with I2Pd"
-
+for i in 1 2 3 4
+do
+for i in {54..57} {57..54} ; do echo -en "\e[48;5;${i}m \e[1m\e[5m\e[35mI2Pd one love\e[0m" ; done ;echo;
+done;
+clear;
+echo -e "\e[1m\e[4m\e[32m...This script prepearing $application $version for use with I2Pd...\e[0m";echo;
+echo -e "\e[1m\e[4m\e[104m\e[31mDownload Firefox ESR\e[0m";echo;
 file="$application-$version.tar.bz2"
 url="https://ftp.mozilla.org/pub/$application/releases/$version/linux-$arch/$language/$file"
 
@@ -13,6 +17,7 @@ dir="$application-portable"
 mkdir "$dir"
 cd "$dir"
 echo "Downloading $application..."
+echo;
 wget -q $url
 if [ $? -ne 0 ]; then # Not found error, trying to cut language variable
 	language=$(echo $language | cut -c-2)
@@ -30,6 +35,7 @@ rm $file
 mv $application app
 fulldir=`pwd`
 mkdir data
+echo -e "\e[33mcreate prefs.js\e[0m\n"
 cat << EOF > data/prefs.js
 # Mozilla User Preferences
 
@@ -242,11 +248,13 @@ user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 user_pref("toolkit.telemetry.unified", false);
 user_pref("webgl.disabled", true);
 EOF
+echo -e "\e[35mcreate profile\e[0m"
 mv ../all/* data/
 
-echo "Adding standart configs..."
+echo -e "\e[2mAdding standart configs...\e[0m\n"
 mv ../configs/* data/
 rm -rf ../configs
+echo -e "\e[2mCreate scripts for start\e[0m"
 echo '#!/bin/bash' > "${application}-portable"
 echo 'dir=${0%/*}' >> "${application}-portable"
 echo 'if [ "$dir" = "$0" ]; then' >> "${application}-portable"
@@ -258,16 +266,28 @@ echo 'number=$RANDOM' >> "${application}-portable"
 echo 'let "number %= $RANGE"' >> "${application}-portable"
 echo 'what=`< /dev/urandom tr -dc "+"+"-" | head -c1`' >> "${application}-portable"
 echo 'TZ=GMT${what}${number} ./firefox --profile ../data' >> "${application}-portable"
-
+echo -e "\e[32mDelete excess also create scripts\e[0m"
 chmod u+x "$application-portable"
 echo ... finished
 rm -rf ../all
+
+bit=`uname -m`
+if [ ${bit} == 'x86_64' ]; then
+cat << EOF > ../startwithi2pd.sh
+./i2pd/i2pd-x86_64
+./$dir/$application-portable
+EOF
+else
 cat << EOF > ../startwithi2pd.sh
 ./i2pd/i2pd
 ./$dir/$application-portable
 EOF
+fi
+
 cat << EOF > ../startwithOUTi2pd.sh
 ./$dir/$application-portable
 EOF
+
 chmod u+x ../startwith*
+echo -e "\e[32mRemove this script\e[0m"
 rm ../$0
