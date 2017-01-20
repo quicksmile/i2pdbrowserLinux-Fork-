@@ -270,5 +270,5 @@ EOF
 cat << EOF > ../startwithOUTi2pd.sh
 ./$dir/$application-portable
 EOF
-chmod u+x startwith*
+chmod u+x ../startwith*
 rm ../$0
