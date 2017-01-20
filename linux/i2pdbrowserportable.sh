@@ -16,8 +16,6 @@ url="https://ftp.mozilla.org/pub/$application/releases/$version/linux-$arch/$lan
 dir="$application-portable"
 mkdir "$dir"
 cd "$dir"
-echo "Downloading $application..."
-echo;
 wget -q $url
 if [ $? -ne 0 ]; then # Not found error, trying to cut language variable
 	language=$(echo $language | cut -c-2)
@@ -29,13 +27,13 @@ if [ ! -f $file ]; then
 	echo "Can't find downloaded file. Does FireFox support your system language?"
 	exit 1;
 fi
-echo "Extracting archive, please wait..."
+echo -e "\e[33Extracting archive, please wait...[0m"
 tar xfj $file
 rm $file
 mv $application app
 fulldir=`pwd`
 mkdir data
-echo -e "\e[33mcreate prefs.js\e[0m\n"
+echo -e "\e[33mcreate prefs.js\e[0m"
 cat << EOF > data/prefs.js
 # Mozilla User Preferences
 
@@ -251,7 +249,7 @@ EOF
 echo -e "\e[35mcreate profile\e[0m"
 mv ../all/* data/
 
-echo -e "\e[2mAdding standart configs...\e[0m\n"
+echo -e "\e[2mAdding standart configs...\e[0m"
 mv ../configs/* data/
 rm -rf ../configs
 echo -e "\e[2mCreate scripts for start\e[0m"
@@ -268,7 +266,6 @@ echo 'what=`< /dev/urandom tr -dc "+"+"-" | head -c1`' >> "${application}-portab
 echo 'TZ=GMT${what}${number} ./firefox --profile ../data' >> "${application}-portable"
 echo -e "\e[32mDelete excess also create scripts\e[0m"
 chmod u+x "$application-portable"
-echo ... finished
 rm -rf ../all
 
 bit=`uname -m`
@@ -290,4 +287,5 @@ EOF
 
 chmod u+x ../startwith*
 echo -e "\e[32mRemove this script\e[0m"
+echo -e "\e[32m... finished\e[0m"
 rm ../$0
