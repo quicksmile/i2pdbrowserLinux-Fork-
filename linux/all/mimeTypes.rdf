@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mimetype:audio/flac"
+                   NC:value="audio/flac">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/flac"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:audio/x-wav"
+                   NC:value="audio/x-wav">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/x-wav"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:application/x-shockwave-flash"
+                   NC:alwaysAsk="true" />
+  <RDF:Seq RDF:about="urn:mimetypes:root">
+    <RDF:li RDF:resource="urn:mimetype:audio/flac"/>
+    <RDF:li RDF:resource="urn:mimetype:audio/mpeg"/>
+    <RDF:li RDF:resource="urn:mimetype:audio/x-mpegurl"/>
+    <RDF:li RDF:resource="urn:mimetype:audio/ogg"/>
+    <RDF:li RDF:resource="urn:mimetype:audio/x-wav"/>
+    <RDF:li RDF:resource="urn:mimetype:audio/x-ms-wma"/>
+    <RDF:li RDF:resource="urn:mimetype:video/x-ms-asf"/>
+    <RDF:li RDF:resource="urn:mimetype:video/x-msvideo"/>
+    <RDF:li RDF:resource="urn:mimetype:video/x-flv"/>
+    <RDF:li RDF:resource="urn:mimetype:video/x-matroska"/>
+    <RDF:li RDF:resource="urn:mimetype:video/mpeg"/>
+    <RDF:li RDF:resource="urn:mimetype:video/mp4"/>
+    <RDF:li RDF:resource="urn:mimetype:video/ogg"/>
+    <RDF:li RDF:resource="urn:mimetype:video/quicktime"/>
+    <RDF:li RDF:resource="urn:mimetype:video/webm"/>
+    <RDF:li RDF:resource="urn:mimetype:video/x-ms-wmv"/>
+    <RDF:li RDF:resource="urn:mimetype:audio/amr"/>
+    <RDF:li RDF:resource="urn:mimetype:video/3gpp"/>
+    <RDF:li RDF:resource="urn:mimetype:application/ogg"/>
+    <RDF:li RDF:resource="urn:mimetype:video/x-ms-wvx"/>
+    <RDF:li RDF:resource="urn:mimetype:application/xspf+xml"/>
+    <RDF:li RDF:resource="urn:mimetype:audio/x-realaudio"/>
+    <RDF:li RDF:resource="urn:mimetype:application/futuresplash"/>
+    <RDF:li RDF:resource="urn:mimetype:application/x-shockwave-flash"/>
+    <RDF:li RDF:resource="urn:mimetype:audio/ogg;codecs=opus"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mimetype:video/3gpp"
+                   NC:value="video/3gpp">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/3gpp"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:application/ogg"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:handler:video/webm"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:handler:audio/flac"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:schemes">
+    <NC:Protocol-Schemes RDF:resource="urn:schemes:root"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:video/x-ms-asf"
+                   NC:value="video/x-ms-asf">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/x-ms-asf"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:audio/amr"
+                   NC:value="audio/amr">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/amr"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:video/x-ms-wvx"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:scheme:handler:webcal"
+                   NC:alwaysAsk="true">
+    <NC:possibleApplication RDF:resource="urn:handler:web:https://calendar.yandex.ru/importics.xml?ics=%s"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:audio/x-realaudio"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:audio/ogg"
+                   NC:value="audio/ogg">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/ogg"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:scheme:handler:ircs"
+                   NC:useSystemDefault="true"
+                   NC:alwaysAsk="true">
+    <NC:possibleApplication RDF:resource="urn:handler:web:https://www.mibbit.com/?url=%s"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:scheme:irc"
+                   NC:value="irc">
+    <NC:handlerProp RDF:resource="urn:scheme:handler:irc"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:application/xspf+xml"
+                   NC:value="application/xspf+xml">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/xspf+xml"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:video/x-flv"
+                   NC:value="video/x-flv">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/x-flv"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:video/quicktime"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:application/x-shockwave-flash"
+                   NC:value="application/x-shockwave-flash">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/x-shockwave-flash"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:scheme:handler:irc"
+                   NC:useSystemDefault="true"
+                   NC:alwaysAsk="true">
+    <NC:possibleApplication RDF:resource="urn:handler:web:https://www.mibbit.com/?url=%s"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:video/mp4"
+                   NC:value="video/mp4">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/mp4"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:audio/x-ms-wma"
+                   NC:value="audio/x-ms-wma">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/x-ms-wma"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:audio/x-realaudio"
+                   NC:value="audio/x-realaudio">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/x-realaudio"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:video/x-flv"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:handler:video/x-msvideo"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:handler:application/futuresplash"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:handler:video/3gpp"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetypes">
+    <NC:MIME-types RDF:resource="urn:mimetypes:root"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:video/x-ms-wmv"
+                   NC:value="video/x-ms-wmv">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/x-ms-wmv"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:video/mpeg"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:handler:audio/mpeg"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:video/x-matroska"
+                   NC:value="video/x-matroska">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/x-matroska"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:video/x-ms-asf"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:handler:web:https://www.mibbit.com/?url=%s"
+                   NC:prettyName="Mibbit"
+                   NC:uriTemplate="https://www.mibbit.com/?url=%s" />
+  <RDF:Description RDF:about="urn:handler:web:http://win.mail.ru/cgi-bin/sentmsg?mailto=%s"
+                   NC:prettyName="Mail.Ru"
+                   NC:uriTemplate="http://win.mail.ru/cgi-bin/sentmsg?mailto=%s" />
+  <RDF:Description RDF:about="urn:mimetype:audio/x-mpegurl"
+                   NC:value="audio/x-mpegurl">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/x-mpegurl"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:video/ogg"
+                   NC:value="video/ogg">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/ogg"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:video/webm"
+                   NC:value="video/webm">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/webm"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:scheme:ircs"
+                   NC:value="ircs">
+    <NC:handlerProp RDF:resource="urn:scheme:handler:ircs"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:video/x-ms-wvx"
+                   NC:value="video/x-ms-wvx">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/x-ms-wvx"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:scheme:handler:mailto"
+                   NC:alwaysAsk="true">
+    <NC:possibleApplication RDF:resource="urn:handler:web:https://mail.yandex.ru/compose?mailto=%s"/>
+    <NC:possibleApplication RDF:resource="urn:handler:web:http://win.mail.ru/cgi-bin/sentmsg?mailto=%s"/>
+    <NC:possibleApplication RDF:resource="urn:handler:web:https://mail.google.com/mail/?extsrc=mailto&amp;url=%s"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:audio/x-mpegurl"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:application/futuresplash"
+                   NC:value="application/futuresplash">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/futuresplash"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:application/xspf+xml"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:handler:audio/ogg;codecs=opus"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:video/quicktime"
+                   NC:value="video/quicktime">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/quicktime"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:handler:web:https://calendar.yandex.ru/importics.xml?ics=%s"
+                   NC:prettyName="Яндекс.Календарь"
+                   NC:uriTemplate="https://calendar.yandex.ru/importics.xml?ics=%s" />
+  <RDF:Description RDF:about="urn:root"
+                   NC:ru_defaultHandlersVersion="4" />
+  <RDF:Description RDF:about="urn:mimetype:handler:video/ogg"
+                   NC:alwaysAsk="true" />
+  <RDF:Seq RDF:about="urn:schemes:root">
+    <RDF:li RDF:resource="urn:scheme:mailto"/>
+    <RDF:li RDF:resource="urn:scheme:webcal"/>
+    <RDF:li RDF:resource="urn:scheme:ircs"/>
+    <RDF:li RDF:resource="urn:scheme:irc"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:handler:web:https://mail.google.com/mail/?extsrc=mailto&amp;url=%s"
+                   NC:prettyName="Gmail"
+                   NC:uriTemplate="https://mail.google.com/mail/?extsrc=mailto&amp;url=%s" />
+  <RDF:Description RDF:about="urn:mimetype:handler:audio/x-ms-wma"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:handler:audio/ogg"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:audio/ogg;codecs=opus"
+                   NC:value="audio/ogg;codecs=opus">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/ogg;codecs=opus"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:scheme:webcal"
+                   NC:value="webcal">
+    <NC:handlerProp RDF:resource="urn:scheme:handler:webcal"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:audio/amr"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:video/x-msvideo"
+                   NC:value="video/x-msvideo">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/x-msvideo"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:video/mpeg"
+                   NC:value="video/mpeg">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:video/mpeg"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:audio/mpeg"
+                   NC:value="audio/mpeg">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/mpeg"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:video/x-matroska"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:application/ogg"
+                   NC:value="application/ogg">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/ogg"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:video/x-ms-wmv"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:scheme:mailto"
+                   NC:value="mailto">
+    <NC:handlerProp RDF:resource="urn:scheme:handler:mailto"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:handler:web:https://mail.yandex.ru/compose?mailto=%s"
+                   NC:prettyName="Яндекс.Почта"
+                   NC:uriTemplate="https://mail.yandex.ru/compose?mailto=%s" />
+  <RDF:Description RDF:about="urn:mimetype:handler:video/mp4"
+                   NC:alwaysAsk="true" />
+  <RDF:Description RDF:about="urn:mimetype:handler:audio/x-wav"
+                   NC:alwaysAsk="true" />
+</RDF:RDF>
